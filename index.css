@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #292929;
+  color: #fff;
+  display: flex;
+  font-size: xx-large;
+  font-weight: 600;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal {
+  align-items: center;
+  display: flex;
+  height: 33rem;
+  justify-content: center;
+}
+.modalbtn {
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+.modalbtn:hover {
+  background-color: rgb(16, 100, 16);
+}
+.modalContent {
+  background-color: #e7ecef;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  position: fixed;
+  top: 5%;
+  transition: top 0.4s ease-in-out;
+  width: 50%;
+}
+.modlHeader {
+  font-weight: 700;
+  padding: 0.6rem;
+  text-align: center;
+}
+.modalBody {
+  padding: 0.6rem;
+}
+.modalFooter {
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.closebtn {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.2rem 0.3rem;
+  padding: 0.3rem 0.4rem;
+}
+.closebtn:hover {
+  background-color: tomato;
+}
