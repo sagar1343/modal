@@ -1,9 +1,15 @@
 const closebtn = document.querySelector(".closebtn");
 const modalbtn = document.querySelector(".modalbtn");
-const modalContent = document.querySelector(".modalContent");
+const modal = document.querySelector(".modal");
+
 closebtn.addEventListener("click", function () {
-  modalContent.style.top = "-100%";
+  modal.style.top = "-100%";
+  document.body.style.overflow = "auto";
 });
 modalbtn.addEventListener("click", function () {
-  modalContent.style.top = "2%";
+  modal.style.top = "0";
+  document.body.style.overflow = "hidden";
+});
+modal.addEventListener("click", function (e) {
+  if (e.target.className === "modal") modal.style.top = "-100%";
 });

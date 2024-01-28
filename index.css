@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  height: 200vh;
+}
 header {
   align-items: center;
   background-color: #292929;
@@ -15,10 +17,11 @@ header {
   justify-content: center;
   padding: 1rem;
 }
-.modal {
-  align-items: center;
+main {
+  height: 92vh;
   display: flex;
-  height: 33rem;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .modalbtn {
@@ -33,15 +36,24 @@ header {
 .modalbtn:hover {
   background-color: rgb(16, 100, 16);
 }
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  animation: modal 3s;
+}
 .modalContent {
   background-color: #e7ecef;
   border-radius: 8px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  position: fixed;
-  top: -100%;
-  transition: top 0.4s ease-in-out;
-  width: 50%;
+  width: 25rem;
 }
 .modalHead {
   font-weight: 700;
@@ -69,4 +81,12 @@ header {
 }
 .closebtn:hover {
   background-color: tomato;
+}
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
