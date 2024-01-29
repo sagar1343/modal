@@ -11,5 +11,8 @@ modalbtn.addEventListener("click", function () {
   document.body.style.overflow = "hidden";
 });
 modal.addEventListener("click", function (e) {
-  if (e.target.className === "modal") modal.style.top = "-100%";
+  if (e.target.className === "modal") {
+    modal.style.top = "-100%";
+    document.body.style.overflow = "auto";
+  }
 });
